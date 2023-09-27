@@ -15,4 +15,14 @@ class TransactionPaymentMethod extends Model
         'transaction_id' , 
         'payment_method_id'
     ];
+
+    public function transaction()
+    {
+        return $this->belongsTo(Transaction::class, 'transaction_id');
+    }
+
+    public function payment_method()
+    {
+        return $this->belongsTo(PaymentMethod::class, 'payment_method_id');
+    }
 }

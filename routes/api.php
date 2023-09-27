@@ -20,3 +20,5 @@ use App\Http\Controllers\API\V1\TransactionController;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::post('checkout/data', [TransactionController::class,'checkoutTransaction']);

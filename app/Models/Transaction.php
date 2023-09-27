@@ -17,4 +17,24 @@ class Transaction extends Model
         'totalPrice',
         'total_quantity'
     ];
+
+    public function customer()
+    {
+        return $this->belongsTo(Customer::class, 'customer_id');
+    }
+
+    public function customer_address()
+    {
+        return $this->belongsTo(CustomerAddress::class, 'customer_address_id');
+    }
+
+    public function transaction_payment_method()
+    {
+        return $this->hasMany(TransactionPaymentMethod::class, 'transaction_id');
+    }
+
+    public function transaction_product()
+    {
+        return $this->hasMany(TransactionProduct::class, 'transaction_id');
+    }
 }

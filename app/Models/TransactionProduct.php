@@ -17,4 +17,14 @@ class TransactionProduct extends Model
         'quantity',
         'totalPrice'
     ];
+
+    public function transaction()
+    {
+        return $this->belongsTo(Transaction::class, 'transaction_id');
+    }
+
+    public function product()
+    {
+        return $this->belongsTo(Product::class, 'product_id');
+    }
 }
