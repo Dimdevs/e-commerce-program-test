@@ -15,3 +15,6 @@ import './bootstrap';
 import './components/Example';
 import './components/Navbar';
 import './components/Footer';
+import './components/About';
+import './components/Product';
+import './components/Cart';

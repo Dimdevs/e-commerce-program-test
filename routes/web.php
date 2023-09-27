@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
+// use internal controller
+use App\Http\Controllers\WEB\ProductController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,8 +17,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
+
+Route::get('/product', [ProductController::class, 'index']);
+
+Route::get('/about', function () {
+    return view('about');
+});
+
 Route::get('/demo', function () {
     return view('demo', ['name'=> 'Shailesh']);
 })->name('demo');

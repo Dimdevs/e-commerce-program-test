@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom/client';
 
 function Footer() {
     return (
-        <footer className='p-3 bg-primary fixed-bottom'>
+        <footer className='p-3 bg-primary'>
             <div className='row'>
                 <div className="col-4">
                     <h1 className='text-white fw-bold'>E - Commerce</h1>
@@ -12,9 +12,9 @@ function Footer() {
                 <div className="col-8">
                     <h3 className='text-white fw-bold'>Menu</h3>
                     <ul className='text-decoration-none underlist-none'> 
-                        <li className='text-decoration-none'><a className='text-decoration-none text-white' href="">Home</a></li>
-                        <li className='text-decoration-none'><a className='text-decoration-none text-white' href="">About</a></li>
-                        <li className='text-decoration-none'><a className='text-decoration-none text-white' href="">Product</a></li>
+                        <li className='text-decoration-none'><a className='text-decoration-none text-white' href="/">Home</a></li>
+                        <li className='text-decoration-none'><a className='text-decoration-none text-white' href="/about">About</a></li>
+                        <li className='text-decoration-none'><a className='text-decoration-none text-white' href="/product">Product</a></li>
                     </ul>
                 </div>
             </div>

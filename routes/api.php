@@ -3,6 +3,9 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
+// use internal controller API
+use App\Http\Controllers\API\V1\TransactionController;
+
 /*
 |--------------------------------------------------------------------------
 | API Routes

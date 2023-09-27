@@ -1,9 +1,15 @@
-[<img src="https://infyom.com/static/laravel-package-a308bdbea163948d3c82afda149f91ab.png" alt="Laravel Package Tutorial">](https://www.youtube.com/channel/UCuCjzuwBqMqFdh0EU-UwQ-w?sub_confirmation=1)
+# Dimas Maulana (DIMDEVS)
 
-## NOTE
-All demo available into the branch. please check branch dropdown for tutorials source code.
+instalasi
 
+PHP V 8.1
+node V 18 Lts
 
-## Video Tutorials
-
-[<img src="https://img.youtube.com/vi/yMtsgBsqDQs/0.jpg" width="580">](https://www.youtube.com/c/LaravelPackageTutorial)
+1. npm install
+2. composer install
+3. buat database dan import database yang ada pada public/db/e-commerce.sql
+4. ganti nama .env.example menjadi .env dan sesuaikan connection db
+5. php artisan optimize
+6. php artisan key:generate
+7. php artisan serve pada terminal 1 atau cmd 1
+8. npm run dev pada terminal 2 atau cmd 2
